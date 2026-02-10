@@ -1,0 +1,45 @@
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.session-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: visible;
+}
+
+.session-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.session-card__content {
+  flex: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.session-card__actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.session-card__actions button {
+  flex: 1;
+  min-width: 80px;
+  padding: 10px 16px;
+  white-space: nowrap;
+}

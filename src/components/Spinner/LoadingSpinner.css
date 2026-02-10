@@ -1,0 +1,34 @@
+/* =============================================
+   LoadingSpinner.css — Estilos del spinner
+   ============================================= */
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 6px solid #e5e7eb; /* gris claro */
+  border-top-color: #3b82f6;  /* azul */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.spinner-message {
+  font-size: 1rem;
+  color: #374151; /* gris oscuro */
+  text-align: center;
+}
+
+/* Animación de giro */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

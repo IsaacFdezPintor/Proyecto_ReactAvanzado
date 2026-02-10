@@ -1,0 +1,10 @@
+services:
+  api:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend/db.json:/app/db.json
+    environment:
+      - PORT=3000
+      - JWT_SECRET=studiosnap-secret-key-2026

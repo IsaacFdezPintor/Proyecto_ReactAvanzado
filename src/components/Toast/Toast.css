@@ -1,0 +1,45 @@
+/* =============================================
+   Toast.css — Estilos para Toast
+   ============================================= */
+
+/* Contenedor de la pila de toasts */
+.toast-stack {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 9999;
+}
+
+/* Toast individual */
+.toast {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  min-width: 200px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Icono dentro del toast */
+.toast-icon {
+  margin-right: 0.5rem;
+}
+
+/* Tipos de toast */
+.toast--success {
+  background-color: #16a34a; /* verde */
+}
+
+.toast--error {
+  background-color: #dc2626; /* rojo */
+}
+
+.toast--info {
+  background-color: #2563eb; /* azul */
+}

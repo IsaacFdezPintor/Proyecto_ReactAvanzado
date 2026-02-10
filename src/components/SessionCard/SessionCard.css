@@ -1,0 +1,103 @@
+/* =============================================
+   SessionCard.css — Estilos de SessionCard
+   ============================================= */
+
+.scard {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  cursor: default;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.scard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen de portada */
+.scard-cover {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.scard-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scard-no-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 3rem;
+  background-color: #f3f4f6; /* gris claro */
+}
+
+/* Cuerpo de la tarjeta */
+.scard-body {
+  padding: 1rem;
+}
+
+.scard-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+}
+
+.scard-client {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+/* Metadatos */
+.scard-meta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.category-tag {
+  background-color: #e5e7eb;
+  color: #374151;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.5rem;
+}
+
+.scard-date {
+  color: #6b7280;
+}
+
+/* Ubicación */
+.scard-location {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+/* Pie de la tarjeta */
+.scard-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scard-price {
+  font-weight: 600;
+  color: #111827;
+}
+
+.scard-actions button + button {
+  margin-left: 0.5rem;
+}

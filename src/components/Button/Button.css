@@ -1,0 +1,12 @@
+.custom-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.3s;
+  margin: 5px;
+}
+.btn-verde { background-color: #0d9488;; color: white; }
+.btn-rojo { background-color: #e74c3c; color: white; }
+.btn-gris { background-color: #95a5a6; color: white; }

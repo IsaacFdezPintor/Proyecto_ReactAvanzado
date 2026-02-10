@@ -1,0 +1,26 @@
+/* =============================================
+   Card.css — Estilos del componente Card
+   ============================================= */
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Solo si la tarjeta es clickable */
+.card--clickable {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card--clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card--clickable:focus {
+  outline: 2px solid #2563eb; /* azul accesible */
+  outline-offset: 2px;
+}

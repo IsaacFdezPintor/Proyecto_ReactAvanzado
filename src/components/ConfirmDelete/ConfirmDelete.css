@@ -1,0 +1,30 @@
+/* =============================================
+   ConfirmDelete.css — Estilos del contenido de confirmación
+   ============================================= */
+
+.confirm-delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  gap: 1.5rem;
+}
+
+.confirm-delete__icon {
+  font-size: 3rem;
+}
+
+.confirm-delete__text {
+  font-size: 1rem;
+  color: #374151; /* gris oscuro */
+}
+
+.confirm-delete__text strong {
+  font-weight: 600;
+}
+
+.confirm-delete__actions {
+  display: flex;
+  gap: 0.5rem;
+}

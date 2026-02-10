@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "usuario@gmail.com",
+      "name": "usuario",
+      "passwordHash": "$2b$10$aePLoLrFe24UyXQe0JClMefC4/k8jyrUsgNBI5OKJaHf2y/bGrtxW"
+    },
+    {
+      "id": 2,
+      "email": "admin@gmail.com",
+      "name": "admin",
+      "passwordHash": "$2b$10$Cogpy13OblVHxzHz.wIOle5H2.wGs2oEAES5UBJqalF0lMfj1BVRq"
+    }
+  ],
+  "sessions": [
+    {
+      "id": 1,
+      "title": "Boda García-López",
+      "client": "María García",
+      "category": "Boda",
+      "date": "2026-03-15",
+      "location": "Finca El Olivar, Sevilla",
+      "price": 1800,
+      "status": "confirmada",
+      "notes": "Ceremonia a las 12:00. Fotos de grupo después del cóctel. Incluye álbum digital.",
+      "coverUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?w=600",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Retrato corporativo – Despacho Ruiz",
+      "client": "Carlos Ruiz",
+      "category": "Retrato",
+      "date": "2026-02-20",
+      "location": "Estudio Central, Madrid",
+      "price": 450,
+      "status": "completada",
+      "notes": "15 retratos individuales + foto de equipo. Fondo blanco y gris.",
+      "coverUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "Sesión producto – Joyería Artesana",
+      "client": "Laura Martínez",
+      "category": "Producto",
+      "date": "2026-02-28",
+      "location": "Estudio Central, Madrid",
+      "price": 600,
+      "status": "pendiente",
+      "notes": "30 piezas de joyería. Fondo mármol y madera. Entrega en 5 días.",
+      "coverUrl": "https://images.unsplash.com/photo-1515562141589-67f0d569b6e2?w=600",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "title": "Paisajes Costa Brava",
+      "client": "Revista Viajes",
+      "category": "Paisaje",
+      "date": "2026-04-10",
+      "location": "Tossa de Mar, Girona",
+      "price": 1200,
+      "status": "pendiente",
+      "notes": "Reportaje amanecer y atardecer. 3 días de shooting. Dron incluido.",
+      "coverUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "title": "Sesión familiar Navidad",
+      "client": "Familia Pérez",
+      "category": "Familia",
+      "date": "2025-12-18",
+      "location": "Parque del Retiro, Madrid",
+      "price": 350,
+      "status": "completada",
+      "notes": "Sesión en exteriores. 4 miembros de familia + mascota. Entregadas 45 fotos.",
+      "coverUrl": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600",
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "title": "Evento corporativo TechStart",
+      "client": "TechStart S.L.",
+      "category": "Evento",
+      "date": "2026-03-05",
+      "location": "Centro de Congresos, Barcelona",
+      "price": 900,
+      "status": "confirmada",
+      "notes": "Cobertura de 8 horas. Ponencias, networking y cena de gala.",
+      "coverUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600",
+      "userId": 2
+    },
+    {
+      "id": 7,
+      "title": "Book modelo – Ana Torres",
+      "client": "Ana Torres",
+      "category": "Moda",
+      "date": "2026-02-14",
+      "location": "Estudio Norte, Valencia",
+      "price": 550,
+      "status": "completada",
+      "notes": "Book profesional. 3 cambios de vestuario. Maquilladora incluida.",
+      "coverUrl": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600",
+      "userId": 2
+    }
+  ]
+}
