@@ -20,7 +20,7 @@ export default function SessionCreatePage() {
       addToast("Sesión creada correctamente", "success");
       setTimeout(() => navigate("/sessions"), 400);
     } catch {
-      addToast("Error al crear la sesión", "error"); //TODO Gestión visible de errores de la API.
+      addToast("Error al crear la sesión", "error"); //TODO Gestión visible de errores de la API. //TODO Son esas pequeñas notificaciones que aparecen en una esquina y desaparecen solas.
       setLoading(false);
     }
   };

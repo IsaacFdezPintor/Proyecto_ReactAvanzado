@@ -78,7 +78,6 @@ export default function SessionsPage() {
         onEdit={handleEdit}
       />
 
-      {/* Modal HTML puro */}
       {deleteTarget && (
         <div className="modal-overlay" onClick={() => setDeleteTarget(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -97,7 +96,7 @@ export default function SessionsPage() {
           </div>
         </div>
       )}
-
+      { /* Toast pasa los errores y removeToast le pasa la función para que cuando pulse a la X se cierre la notificación */}
       <ToastContainer toasts={toasts} removeToast={removeToast} />
     </div>
   );

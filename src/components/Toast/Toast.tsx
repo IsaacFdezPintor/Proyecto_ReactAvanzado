@@ -24,7 +24,10 @@ export function ToastContainer({ toasts, removeToast }: ToastContainerProps) {
 // Componente individual de Toast
 function ToastItem({ toast, onClose }: { toast: ToastMessage; onClose: () => void }) {
   useEffect(() => {
-    const timer = setTimeout(onClose, 3500);
+    // Definimos la duración: 
+    // 6000ms si es éxito, 3000ms para el resto
+    const duration = toast.type === "success" ? 6000 : 3000;
+    const timer = setTimeout(onClose, duration);
     return () => clearTimeout(timer);
   }, [onClose]);
 

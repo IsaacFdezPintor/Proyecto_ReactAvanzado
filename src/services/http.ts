@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "axios"; //TODO Consumo de la API REST mediante Axios (es una librería de JavaScript que sirve para hacer peticiones HTTP desde tu aplicación (el cliente) hacia un servidor (la API) )
 import { authStorage } from "../auth/authStorage";
 import type { AuthSession } from "../types/Auth";
 

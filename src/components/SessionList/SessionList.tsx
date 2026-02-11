@@ -21,6 +21,8 @@ export default function SessionList({
 }: SessionListProps) {
   const navigate = useNavigate();
 
+  // TODO Estados de carga (loading).
+
   // Mostramos spinner mientras carga
   if (loading) {
     return <LoadingSpinner message="Cargando sesiones..." />;

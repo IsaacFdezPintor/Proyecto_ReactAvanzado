@@ -56,8 +56,8 @@ export default function SessionEditPage() {
       {/* SessionForm CON initialData = modo edición (precarga los valores) */}
       <SessionForm sessionSeleccionada={session} updateSession={handleSubmit} peticionEnProgreso={saving} cancelUpdateSession={() => navigate(`/sessions/${id}`)} addSession={() => {}} 
       />
-      {/* Toasts */}
-      <ToastContainer toasts={toasts} removeToast={removeToast} />
+      {/* TODO Toasts */} //{/*Son esas pequeñas notificaciones que aparecen en una esquina y desaparecen solas.*/}
+      <ToastContainer toasts={toasts} removeToast={removeToast} /> 
     </div>
   );
 }

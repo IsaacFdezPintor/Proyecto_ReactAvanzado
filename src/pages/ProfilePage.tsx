@@ -1,14 +1,3 @@
-// =============================================
-// ProfilePage.tsx — Página de perfil del usuario
-// =============================================
-// Muestra los datos del usuario logueado:
-// avatar, nombre, email e ID.
-// Los datos se obtienen del contexto de auth (no del servidor).
-// Si no hay usuario (no debería pasar porque es ruta protegida),
-// devuelve null (no renderiza nada).
-// =============================================
-
-// Hook para acceder a los datos del usuario autenticado
 import { useAuth } from "../auth/authContext";
 
 export default function ProfilePage() {

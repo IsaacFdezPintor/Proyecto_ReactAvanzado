@@ -1,6 +1,7 @@
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/authContext";
 import Button from "../components/Button/Button";
+import { useEffect } from "react";
 
 export default function AppLayout() {
   const { isAuthenticated, user, logout } = useAuth();
@@ -10,6 +11,9 @@ export default function AppLayout() {
     logout();
     navigate("/login");
   };
+  useEffect(() => {
+    document.title = "PixelTrap — Gestión de Sesiones";
+  }, []);
 
   return (
     <div className="app-layout">
