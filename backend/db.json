@@ -23,6 +23,12 @@
       "email": "isaaac@htomaiu.com",
       "name": "Isaax",
       "passwordHash": "$2b$10$7T4K2jPMFOpqAqxniT8xDOKWUYhE6.NlL6rFs80C50buJ1eGmTFfu"
+    },
+    {
+      "id": 5,
+      "email": "luis@gmail.com",
+      "name": "luis",
+      "passwordHash": "$2b$10$Uf8HOdzZsHJG429uPnmjo.ZY1VjcCm1FeDahG0Io6v/cuCHM0dzjy"
     }
   ],
   "sessions": [
@@ -95,11 +101,11 @@
       "id": 6,
       "title": "Evento corporativo TechStart",
       "client": "TechStart S.L.",
-      "category": "Evento",
+      "category": "Familia",
       "date": "2026-03-05",
       "location": "Centro de Congresos, Barcelona",
       "price": 900,
-      "status": "completada",
+      "status": "cancelada",
       "notes": "Cobertura de 8 horas. Ponencias, networking y cena de gala.",
       "coverUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600",
       "userId": 2
@@ -119,14 +125,14 @@
     },
     {
       "id": 8,
-      "title": "Bosa",
-      "client": "Isaac",
-      "category": "Retrato",
-      "date": "2026-02-10",
-      "location": "",
-      "price": 40,
-      "status": "completada",
-      "notes": "",
+      "title": "Boda Daniel",
+      "client": "Daniel Castro",
+      "category": "Boda",
+      "date": "2026-04-03",
+      "location": "Fernán Núñez",
+      "price": 26,
+      "status": "confirmada",
+      "notes": "No se casa",
       "coverUrl": "",
       "userId": 3
     }

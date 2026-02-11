@@ -24,17 +24,19 @@ export default function SessionsPage() {
     loadSessions();
   }, []);
 
-  const loadSessions = async () => {
-    setLoading(true);
-    try {
-      const data = await sessionService.getAll();
-      setSessions(data);
-    } catch {
-      addToast("Error al cargar las sesiones", "error");
-    } finally {
-      setLoading(false);
-    }
-  };
+const loadSessions = async () => {
+  setLoading(true);
+  try {
+    await new Promise((res) => setTimeout(res, 2000)); // 👈 simula 2s
+    const data = await sessionService.getAll();
+    setSessions(data);
+  } catch {
+    addToast("Error al cargar las sesiones", "error");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   const handleDeleteClick = (session: PhotoSession) => {
     setDeleteTarget(session);

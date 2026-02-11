@@ -1,7 +1,6 @@
 import type { PhotoSession } from "../../types/Session";
 import SessionCard from "../SessionCard/SessionCard";
 import LoadingSpinner from "../Spinner/LoadingSpinner";
-import { useNavigate } from "react-router-dom";
 import "./SessionList.css";
 
 type SessionListProps = {
@@ -19,16 +18,22 @@ export default function SessionList({
   onDelete,
   onEdit,
 }: SessionListProps) {
-  const navigate = useNavigate();
-
-  // TODO Estados de carga (loading).
-
-  // Mostramos spinner mientras carga
   if (loading) {
-    return <LoadingSpinner message="Cargando sesiones..." />;
+    return (
+      <div className="session-list-container">
+        <p>Cargando ....</p>
+      </div>
+    );
   }
 
-  // Renderizamos la cuadrícula de tarjetas
+  if (!sessions.length) {
+    return (
+      <div className="session-list-empty">
+        <p>No hay sesiones disponibles.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="session-grid">
       {sessions.map((s) => (

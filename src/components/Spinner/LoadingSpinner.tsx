@@ -1,16 +1,9 @@
-// =============================================
-// LoadingSpinner.tsx — Componente de carga
-// =============================================
 import './LoadingSpinner.css';
 
-type LoadingSpinnerProps = {
-  message?: string; // Mensaje opcional que se muestra debajo del spinner
-};
-
-const LoadingSpinner = ({ message = "Cargando..." }: LoadingSpinnerProps) => {
+const LoadingSpinner = ({ message = "Cargando sesiones..." }) => {
   return (
     <div className="spinner">
-      <div className="loader" />
+      <div className="loader"></div>
       <p className="spinner-message">{message}</p>
     </div>
   );

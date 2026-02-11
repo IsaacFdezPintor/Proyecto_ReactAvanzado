@@ -1,34 +1,39 @@
-/* =============================================
-   LoadingSpinner.css — Estilos del spinner
-   ============================================= */
-
+/* Contenedor principal que bloquea toda la pantalla */
 .spinner {
+  position: fixed; /* Se queda fijo aunque hagas scroll */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% del ancho de la pantalla */
+  height: 100vh; /* 100% del alto de la pantalla */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  flex-direction: column; /* Pone el mensaje debajo del círculo */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  z-index: 9999; /* Asegura que esté por encima de TODO */
 }
 
+/* El círculo que gira */
 .loader {
-  width: 48px;
-  height: 48px;
-  border: 6px solid #e5e7eb; /* gris claro */
-  border-top-color: #3b82f6;  /* azul */
+  width: 60px;
+  height: 60px;
+  border: 6px solid #f3f3f3; /* Gris claro */
+  border-top: 6px solid #1a73e8; /* Azul */
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  margin-bottom: 1rem;
+  margin-bottom: 15px; /* Espacio entre el spinner y el texto */
 }
 
+/* Estilo para el mensaje de "Cargando..." */
 .spinner-message {
-  font-size: 1rem;
-  color: #374151; /* gris oscuro */
-  text-align: center;
+  font-family: sans-serif;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
 }
 
-/* Animación de giro */
+/* Animación de rotación */
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
